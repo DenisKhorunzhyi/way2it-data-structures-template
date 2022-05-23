@@ -114,21 +114,7 @@ public class BinaryTree {
 
     // Should return true if this tree contains specified value, false - otherwise
     public boolean contains(int value) {
-        Node currentNode = root; // начинаем поиск с корневого узла
-        while (currentNode.value != value)
-        { // поиск покуда не будет найден элемент или не будут перебраны все
-            if (value < currentNode.value) { // движение влево?
-                currentNode = currentNode.left;
-            } else { //движение вправо
-                currentNode = currentNode.right;
-            }
-            if (currentNode == null) { // если потомка нет,
-                return false; // возвращаем null
-            }
-        }
-        if (currentNode != null) {
-            return true;
-        } // возвращаем найденный элемент
+
         return false;
     }
     private Node receiveHeir(Node node) {
